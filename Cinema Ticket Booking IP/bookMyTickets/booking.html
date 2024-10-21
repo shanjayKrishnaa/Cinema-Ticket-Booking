@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Booking.com</title>
+  </head>
+
+  <body>
+    <header>
+      <div class>
+        <a href="index.html"><img src="" alt=""></a>
+      </div>     
+      
+      <form id="form1">
+        <input type="text" id="inputxt" placeholder="search movies...">
+        <button id="submitbtn">GO</button>
+      </form>
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="#">ABOUT US</a></li>
+          <li><a href="#">NOW SHOWING</a></li>
+          <li><a href="#">COMING SOON</a></li>
+          <li><a href="booking.html">BUY TICKETS</a></li>
+          <li><a href="#">Shows</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- <section class="missedsection">
+    <div class="txt">
+      <p>
+        BOOK MOVIE TICKET
+      </p>
+    </div>
+    
+    </section> -->
+
+   <section class="sectionSIX" id="sectionSIX">
+    <div class="sixContent">
+     <div class="h4div"> <h4 id="formHeading">TICKETS BOOKING FORM</h4></div>
+      <form id="emmanuel_TV_Form">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder= "Surname   First-Name   Other-Name (optional)" />
+            <small id="nameError" class="error"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="age">Age:</label>
+          <input type="text" id="age" name="age" placeholder="Enter your Age" />         
+          <small id="ageError" class="error"></small>
+        </div>
+    
+        <div class="form-group">
+          <label for="contact">Contact:</label>
+          <input type="tel" id="contact" name="contact" placeholder="Enter your Phone Number "/>
+          <small id="contactError" class="error"></small>
+        </div>
+    
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your Email" />
+            <small id="emailError" class="error"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="Movie">Movie:</label>
+            <select id="movie" name="movie">
+                <option value="">Select Movies</option>
+                <option value="The return Of Emmanuel Season 1">The return Of Season 1</option>
+                <option value="Game Of Thrones Season 1">Game Of Thrones Season 1</option>
+                <option value="Into the Bad Land Season 1">Into the Bad Land Season 1</option>
+            </select>
+                <small id="movieError" class="error"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="seat">Seat:</label>
+            <select id="seat" name="seat">
+                <option value="">Select Sitting Position</option>
+                <option value="Seat 1-8 availiable">Front Seat</option>
+                <option value="Seat 15-23 availiable">Middle Seat</option>
+                <option value="Seat 42-54 availiable">Back Seat</option>
+            </select>
+            <small id="seatError" class="error"></small>
+        </div>
+
+
+
+        <div class="form-group">
+          <label for="date-select">Date:</label>
+          <select id="date-select">
+            <option value="">Select Movie Date:</option>
+            <option value="day1" id="day1"></option>
+            <option value="tomorrowFormatted" id="day2"></option>
+            <option value="nextTomorrowFormatted" id="day3"></option>
+            <option value="day4" id="day4"></option>
+            <option value="" id="day5"></option>
+          </select>
+            <small id="date-selectError" class="error"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="time">Time:</label>
+            <select id="time" name="time">             
+                <option value="">Select Movie Time</option>
+                <option value="18:00">18:00</option>
+                <option value="20:00">20:00</option>
+                <option value="23:00">23:00</option>
+            </select>
+            <small id="timeError" class="error"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="ticketType">Ticket Type:</label>
+            <select id="ticketType" name="ticketType">
+                <option value="">Select Ticket Type</option>
+                <option value="Regular">Regular - 110 Rupees</option>
+                <option value="Premium">Premium - 250 Rupees</option>
+            </select>
+            <small id="ticketTypeError" class="error"></small>
+        </div>
+
+       
+        <div class="form-group">
+          <label for="numTickets">Number of Tickets:</label>
+          <input type="number" id="numTickets" name="numTickets" placeholder="Pick Number of Tickets">
+          <small id="numTicketsError" class="error"></small>
+        </div>
+
+
+        <div class="buttonDiv">
+          <button class="button" id="button5">BOOK</button>
+
+        </div>      
+      </form>  
+    </div>
+    </section>
+
+    <center id="centerResult">
+      <div class="ticket" id="ticket">
+        <div class="orignal">
+              <div class="pass" >
+               <small class="small1">TICKET PASS</small>
+              </div>
+            <div>
+              <small class="small1" id="movieResult">Movie: The return of Emmanuel Season 1</small>
+            </div>
+            <div>
+              <small class="small1" id="ticketTypeResult">Ticket-Type: Regular</small>
+            </div>
+  
+            <div>
+              <small class="small1" id="dateResult">Date: Wed Sep 18 2024</small>
+            </div>
+  
+            <div>
+              <small class="small1" id="timeResult">Time: 10:00</small>
+            </div>
+  
+            <div>
+              <small class="small1" id="numTicketResult">Number of Ticket(s): 10</small>
+            </div>
+  
+            <div>
+              <small class="small1" id="seatResult">Seat Number: Front Seat</small>
+            </div>
+  
+            <div>
+              <small class="small1" id="priceResult">Total Price: $15</small>
+            </div>
+            <div>
+              <small class="small1" id="print" onclick="window.print()"><button class="print">print</button></small>
+            </div>
+        </div>
+        <img src="https://cdn.pixabay.com/photo/2023/02/28/01/51/qr-code-7819654_640.jpg" alt="" class="barCode">
+      </div>
+    </center>
+
+    <footer class="one">
+    <div class="footer_img">
+        <a href="index.html">
+            
+        </a>
+    </div>
+
+    <div class="footer_1">
+        <p>For You</p>
+        <ul>
+            <li><a href="">About</a></li>
+            <li><a href=""> TV</a></li>
+            <li><a href="">Coming Soon</a></li>
+            <li><a href="">Now Showing</a></li>
+            <li><a href="booking.html">Buy Tickets</a></li>
+        </ul>
+    </div>    
+    <div class="footer_1">
+        <p>Company</p>
+        <ul>
+            <li><a href="">About</a></li>
+            <li><a href="">NewsRoom</a></li>
+            <li><a href="">Career</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Terms and Condition</a></li>
+        </ul>
+    </div>
+    <div class="footer_1">
+        <p>We're Social</p>
+        <ul>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Twitter</a></li>
+            <li><a href="">Instagram</a></li>
+            <li><a href="">Youtube</a></li>
+            <li><a href="">linkdin</a></li>
+        </ul>
+    </div>
+    </footer>
+      <div class="copy">Copyright &copy; 2024 TV, Inc. All Right Reserved </div>
+
+
+
+  
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script2.js"></script>
+    <script src="script.js"></script>
+    <script src="js.js"></script>
+  </body>
+</html>
